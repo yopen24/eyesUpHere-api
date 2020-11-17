@@ -28,7 +28,7 @@ if(!email|| !name || !password){
       .then(trx.commit)
       .catch(trx.rollback)
     })
-    .catch(err => res.status(400).json(err))
+    .catch(err => res.status(400).json('unable to register'))
   }
 
   module.exports={
